@@ -1,0 +1,53 @@
+name: Question
+description: Ask a question about setup, usage, or configuration
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? We're here to help!
+        
+        Before asking, please check:
+        - [README.md](../README.md) for setup instructions
+        - [Troubleshooting section](../README.md#🐛-troubleshooting)
+        - [API Documentation](../docs/API.md)
+        - [Existing issues](../issues)
+        
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to know?
+      placeholder: How do I...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context about your setup or use case
+      placeholder: I'm trying to set up the bot on...
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Setup and Installation
+        - Configuration
+        - Usage and Commands
+        - Troubleshooting
+        - Development and Contributing
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What I've Tried
+      description: What have you already tried to solve this?
+      placeholder: I've checked the documentation and tried...

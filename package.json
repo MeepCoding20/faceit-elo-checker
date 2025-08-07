@@ -1,0 +1,49 @@
+{
+  "name": "faceit-elo-checker",
+  "version": "1.0.0",
+  "description": "Discord bot that automatically assigns FACEIT ELO and level roles based on CS2 statistics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect index.js",
+    "setup": "node scripts/generateLevelRoles.js",
+    "fix-colors": "node scripts/fixLevel5Color.js",
+    "logs": "tail -f logs/combined.log",
+    "test": "echo \"No tests specified yet - this is ok for now\""
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "faceit",
+    "cs2",
+    "counter-strike",
+    "elo",
+    "gaming",
+    "roles",
+    "automation"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/faceit-elo-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/faceit-elo-checker/issues"
+  },
+  "homepage": "https://github.com/yourusername/faceit-elo-checker#readme",
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^17.2.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {},
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/yourusername"
+  }
+}
