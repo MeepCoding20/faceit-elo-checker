@@ -6,7 +6,7 @@
  * This is the main entry point for the Discord bot that automatically
  * assigns FACEIT ELO and level roles based on CS2 statistics.
  * 
- * @author Your Name
+ * @author Meep
  * @version 1.0.0
  */
 
